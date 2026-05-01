@@ -1,0 +1,74 @@
+/* --- Contact Section --- */
+.contact {
+  background-color: var(--charcoal);
+}
+
+.contact__grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: clamp(3rem, 6vw, 8rem);
+  align-items: center;
+}
+
+.contact__left {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact__heading {
+  color: var(--white-pure);
+  max-width: 14ch;
+}
+
+/* Right — contact info */
+.contact__right {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact__info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.contact__info-icon {
+  color: var(--gold);
+  margin-top: 0.2rem;
+  flex-shrink: 0;
+}
+
+.contact__info-label {
+  font-size: var(--fs-caption);
+  font-weight: 400;
+  letter-spacing: var(--ls-wider);
+  text-transform: uppercase;
+  color: var(--gray-mid);
+  display: block;
+  margin-bottom: 0.35rem;
+}
+
+.contact__info-item a,
+.contact__info-item p {
+  font-size: var(--fs-body-sm);
+  color: var(--white);
+  font-weight: 300;
+  line-height: var(--lh-relaxed);
+}
+
+.contact__info-item a:hover {
+  color: var(--gold);
+}
+
+@media (max-width: 768px) {
+  .contact__grid {
+    grid-template-columns: 1fr;
+  }
+}

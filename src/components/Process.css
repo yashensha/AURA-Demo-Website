@@ -1,0 +1,138 @@
+/* --- Process Section --- */
+.process {
+  background-color: var(--black-soft);
+}
+
+.process__header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: var(--space-lg);
+  text-align: center;
+}
+
+.process__heading {
+  color: var(--white-pure);
+}
+
+.process__timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.process__line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background-color: var(--gold);
+  transform: translateX(-50%);
+}
+
+.process__step {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 5rem;
+  width: 50%;
+}
+
+.process__step:last-child {
+  margin-bottom: 0;
+}
+
+.process__step--left {
+  padding-right: 4rem;
+  text-align: right;
+  justify-content: flex-end;
+}
+
+.process__step--right {
+  margin-left: 50%;
+  padding-left: 4rem;
+}
+
+.process__step-dot {
+  position: absolute;
+  top: 0.5rem;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  border: 1px solid var(--gold);
+  background-color: var(--black-soft);
+  z-index: var(--z-above);
+}
+
+.process__step--left .process__step-dot {
+  right: -6px;
+}
+
+.process__step--right .process__step-dot {
+  left: -6px;
+}
+
+.process__step-number {
+  font-size: clamp(3rem, 5vw, 4.5rem);
+  font-weight: 100;
+  color: var(--gold);
+  opacity: 0.2;
+  line-height: 1;
+  position: absolute;
+  top: -0.75rem;
+}
+
+.process__step--left .process__step-number {
+  left: 0;
+}
+
+.process__step--right .process__step-number {
+  right: 0;
+}
+
+.process__step-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.process__step-title {
+  font-size: var(--fs-h3);
+  font-weight: 300;
+  color: var(--white-pure);
+}
+
+.process__step-desc {
+  max-width: 320px;
+}
+
+.process__step--left .process__step-desc {
+  margin-left: auto;
+}
+
+@media (max-width: 768px) {
+  .process__line { left: 0; }
+  .process__step,
+  .process__step--left,
+  .process__step--right {
+    width: 100%;
+    margin-left: 0;
+    padding-left: 3rem;
+    padding-right: 0;
+    text-align: left;
+  }
+  .process__step-dot {
+    left: -6px !important;
+    right: auto !important;
+  }
+  .process__step-number {
+    position: static;
+    margin-bottom: 0.5rem;
+    opacity: 0.15;
+  }
+  .process__step--left .process__step-desc {
+    margin-left: 0;
+  }
+}

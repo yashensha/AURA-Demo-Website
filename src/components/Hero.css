@@ -1,0 +1,122 @@
+/* --- Hero Section --- */
+.hero {
+  position: relative;
+  height: 100vh;
+  min-height: 600px;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.hero__image-wrap {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero__image {
+  width: 100%;
+  height: 120%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(10, 10, 10, 0.95) 0%,
+    rgba(10, 10, 10, 0.6) 40%,
+    rgba(10, 10, 10, 0.3) 70%,
+    rgba(10, 10, 10, 0.15) 100%
+  );
+}
+
+.hero__content {
+  position: relative;
+  z-index: var(--z-above);
+  padding-bottom: clamp(4rem, 10vh, 8rem);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.hero__caption-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.hero__line {
+  display: inline-block;
+  height: 1px;
+  width: 0;
+  background-color: var(--gold);
+}
+
+.hero__heading {
+  color: var(--white-pure);
+  max-width: 12ch;
+}
+
+.hero__char {
+  display: inline-block;
+  opacity: 0;
+}
+
+.hero__subline {
+  font-size: var(--fs-body);
+  font-weight: 300;
+  color: var(--gray-light);
+  letter-spacing: var(--ls-wide);
+  max-width: 400px;
+}
+
+/* Scroll Indicator */
+.hero__scroll-indicator {
+  position: absolute;
+  bottom: 2rem;
+  right: var(--content-padding);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  z-index: var(--z-above);
+}
+
+.hero__scroll-indicator span {
+  font-size: 0.65rem;
+  font-weight: 400;
+  letter-spacing: var(--ls-widest);
+  text-transform: uppercase;
+  color: var(--gray-mid);
+  writing-mode: vertical-rl;
+}
+
+.hero__scroll-line {
+  width: 1px;
+  height: 60px;
+  background: linear-gradient(to bottom, var(--gold), transparent);
+  animation: scrollPulse 2s ease-in-out infinite;
+}
+
+@keyframes scrollPulse {
+  0%, 100% { opacity: 0.3; transform: scaleY(0.6); }
+  50% { opacity: 1; transform: scaleY(1); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    align-items: flex-end;
+  }
+
+  .hero__heading {
+    max-width: 100%;
+  }
+
+  .hero__scroll-indicator {
+    display: none;
+  }
+}

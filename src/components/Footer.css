@@ -1,0 +1,68 @@
+/* --- Footer --- */
+.footer {
+  background-color: var(--black);
+  border-top: 1px solid var(--gray-dark);
+  padding: var(--space-lg) 0 var(--space-md);
+}
+
+.footer__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+}
+
+.footer__brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer__logo {
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: var(--ls-widest);
+  color: var(--white-pure);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.footer__logo-accent {
+  color: var(--gold);
+}
+
+.footer__tagline {
+  font-size: var(--fs-caption);
+  letter-spacing: var(--ls-wider);
+  text-transform: uppercase;
+  color: var(--gray-mid);
+}
+
+.footer__socials {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer__socials a {
+  color: var(--gray-light);
+  transition: color var(--duration-normal) var(--ease-out),
+              transform var(--duration-normal) var(--ease-out);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+}
+
+.footer__socials a:hover {
+  color: var(--gold);
+  transform: translateY(-2px);
+}
+
+.footer__copy {
+  font-size: var(--fs-caption);
+  color: var(--gray-mid);
+  letter-spacing: var(--ls-wide);
+}
