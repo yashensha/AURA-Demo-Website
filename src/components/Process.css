@@ -1,6 +1,6 @@
 /* --- Process Section --- */
 .process {
-  background-color: var(--black-soft);
+  background-color: var(--bg-secondary);
 }
 
 .process__header {
@@ -12,7 +12,7 @@
 }
 
 .process__heading {
-  color: var(--white-pure);
+  color: var(--text-primary);
 }
 
 .process__timeline {
@@ -62,7 +62,7 @@
   height: 11px;
   border-radius: 50%;
   border: 1px solid var(--gold);
-  background-color: var(--black-soft);
+  background-color: var(--bg-secondary);
   z-index: var(--z-above);
 }
 
@@ -78,7 +78,7 @@
   font-size: clamp(3rem, 5vw, 4.5rem);
   font-weight: 100;
   color: var(--gold);
-  opacity: 0.2;
+  opacity: 0.15;
   line-height: 1;
   position: absolute;
   top: -0.75rem;
@@ -101,7 +101,7 @@
 .process__step-title {
   font-size: var(--fs-h3);
   font-weight: 300;
-  color: var(--white-pure);
+  color: var(--text-primary);
 }
 
 .process__step-desc {
@@ -130,7 +130,7 @@
   .process__step-number {
     position: static;
     margin-bottom: 0.5rem;
-    opacity: 0.15;
+    opacity: 0.12;
   }
   .process__step--left .process__step-desc {
     margin-left: 0;

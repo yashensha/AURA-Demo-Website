@@ -13,18 +13,23 @@
 
 /* --- CSS Custom Properties --- */
 :root {
-  /* Palette */
-  --black: #0A0A0A;
-  --black-soft: #111111;
-  --charcoal: #1A1A1A;
-  --gray-dark: #2A2A2A;
-  --gray-mid: #6B6B6B;
-  --gray-light: #A0A0A0;
-  --white: #F5F5F0;
+  /* Palette — Light Mode */
+  --bg-primary: #FAFAF7;
+  --bg-secondary: #F2F1ED;
+  --bg-tertiary: #EAEAE5;
+  --bg-card: #FFFFFF;
+  --border: #E0DFDA;
+  --border-subtle: #EDECE8;
+  --text-primary: #171717;
+  --text-secondary: #404040;
+  --text-muted: #6B6B6B;
+  --text-faint: #9B9B9B;
   --white-pure: #FFFFFF;
-  --gold: #C9A96E;
-  --gold-light: #D4BC8B;
-  --gold-dark: #B8964F;
+  --gold: #B8964F;
+  --gold-light: #C9A96E;
+  --gold-dark: #9A7B3A;
+  --overlay-dark: rgba(23, 23, 23, 0.7);
+  --overlay-light: rgba(250, 250, 247, 0.85);
 
   /* Typography Scale */
   --font-family: 'Geist Sans', 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -101,8 +106,8 @@ body {
   font-weight: 300;
   font-size: var(--fs-body);
   line-height: var(--lh-relaxed);
-  color: var(--white);
-  background-color: var(--black);
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
   overflow-x: hidden;
 }
 
@@ -130,12 +135,12 @@ a {
 }
 
 a:hover {
-  color: var(--gold-light);
+  color: var(--gold-dark);
 }
 
 ::selection {
   background-color: var(--gold);
-  color: var(--black);
+  color: var(--white-pure);
 }
 
 /* --- Images --- */
@@ -201,7 +206,7 @@ img, video {
   letter-spacing: var(--ls-wider);
   line-height: var(--lh-normal);
   text-transform: uppercase;
-  color: var(--gold);
+  color: var(--gold-dark);
 }
 
 .text-body {
@@ -209,7 +214,7 @@ img, video {
   font-weight: 300;
   letter-spacing: var(--ls-normal);
   line-height: var(--lh-relaxed);
-  color: var(--gray-light);
+  color: var(--text-muted);
 }
 
 /* --- Gold Line Divider --- */
@@ -231,7 +236,7 @@ img, video {
   font-weight: 400;
   letter-spacing: var(--ls-wider);
   text-transform: uppercase;
-  color: var(--black);
+  color: var(--white-pure);
   background-color: var(--gold);
   border: 1px solid var(--gold);
   cursor: pointer;
@@ -264,7 +269,7 @@ img, video {
 
 .btn-gold-outline:hover {
   background-color: var(--gold);
-  color: var(--black);
+  color: var(--white-pure);
 }
 
 /* --- Section Spacing --- */

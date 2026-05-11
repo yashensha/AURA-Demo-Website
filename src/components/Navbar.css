@@ -7,13 +7,15 @@
   height: var(--nav-height);
   z-index: var(--z-nav);
   transition: background-color var(--duration-slow) var(--ease-out),
-              backdrop-filter var(--duration-slow) var(--ease-out);
+              backdrop-filter var(--duration-slow) var(--ease-out),
+              box-shadow var(--duration-slow) var(--ease-out);
 }
 
 .navbar--scrolled {
-  background-color: rgba(10, 10, 10, 0.85);
+  background-color: var(--overlay-light);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 1px 0 var(--border-subtle);
 }
 
 .navbar__inner {
@@ -31,7 +33,7 @@
   font-size: 1.5rem;
   font-weight: 300;
   letter-spacing: var(--ls-widest);
-  color: var(--white-pure);
+  color: var(--text-primary);
   text-transform: uppercase;
   text-decoration: none;
   transition: color var(--duration-normal) var(--ease-out);
@@ -57,7 +59,7 @@
   font-weight: 400;
   letter-spacing: var(--ls-wide);
   text-transform: uppercase;
-  color: var(--gray-light);
+  color: var(--text-muted);
   text-decoration: none;
   position: relative;
   padding: 0.25rem 0;
@@ -76,7 +78,7 @@
 }
 
 .navbar__links a:hover {
-  color: var(--white-pure);
+  color: var(--text-primary);
 }
 
 .navbar__links a:hover::after {
@@ -107,6 +109,10 @@
   transform-origin: center;
 }
 
+.navbar__hamburger--open span {
+  background-color: var(--white-pure);
+}
+
 .navbar__hamburger--open span:nth-child(1) {
   transform: translateY(7px) rotate(45deg);
 }
@@ -123,7 +129,7 @@
 .mobile-menu {
   position: fixed;
   inset: 0;
-  background-color: var(--black);
+  background-color: var(--text-primary);
   z-index: var(--z-overlay);
   display: flex;
   flex-direction: column;
@@ -170,14 +176,14 @@
 }
 
 .mobile-menu__links a:hover {
-  color: var(--gold);
+  color: var(--gold-light);
 }
 
 .mobile-menu__footer {
   position: absolute;
   bottom: 3rem;
   text-align: center;
-  color: var(--gray-mid);
+  color: var(--text-faint);
   font-size: var(--fs-caption);
   letter-spacing: var(--ls-wider);
   text-transform: uppercase;
@@ -187,7 +193,7 @@
 }
 
 .mobile-menu__footer a {
-  color: var(--gold);
+  color: var(--gold-light);
   text-decoration: none;
 }
 

@@ -1,6 +1,6 @@
 /* --- Portfolio Section --- */
 .portfolio {
-  background-color: var(--black);
+  background-color: var(--bg-primary);
   overflow: hidden;
   padding-bottom: 0;
 }
@@ -10,7 +10,7 @@
 }
 
 .portfolio__heading {
-  color: var(--white-pure);
+  color: var(--text-primary);
 }
 
 .portfolio__track {
@@ -50,7 +50,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(10,10,10,0.85) 0%, rgba(10,10,10,0.2) 50%, transparent 100%);
+  background: linear-gradient(to top, rgba(23,23,23,0.8) 0%, rgba(23,23,23,0.15) 50%, transparent 100%);
 }
 
 .portfolio__card-info {
@@ -65,6 +65,10 @@
   gap: 0.5rem;
 }
 
+.portfolio__card-info .text-caption {
+  color: var(--gold-light);
+}
+
 .portfolio__card-title {
   font-size: var(--fs-h3);
   font-weight: 300;
@@ -73,7 +77,7 @@
 
 .portfolio__card-location {
   font-size: var(--fs-body-sm);
-  color: var(--gray-light);
+  color: rgba(255,255,255,0.7);
 }
 
 .portfolio__card-index {

@@ -1,6 +1,6 @@
 /* --- About Section --- */
 .about {
-  background-color: var(--black);
+  background-color: var(--bg-primary);
 }
 
 .about__grid {
@@ -17,7 +17,7 @@
 }
 
 .about__heading {
-  color: var(--white-pure);
+  color: var(--text-primary);
   max-width: 18ch;
 }
 
@@ -34,7 +34,7 @@
   gap: 3rem;
   margin-top: 1.5rem;
   padding-top: 2rem;
-  border-top: 1px solid var(--gray-dark);
+  border-top: 1px solid var(--border);
 }
 
 .about__stat {
@@ -69,7 +69,7 @@
   font-weight: 400;
   letter-spacing: var(--ls-wider);
   text-transform: uppercase;
-  color: var(--gray-mid);
+  color: var(--text-faint);
 }
 
 /* Image */
@@ -95,7 +95,7 @@
   bottom: -1px;
   border: 1px solid var(--gold);
   pointer-events: none;
-  opacity: 0.3;
+  opacity: 0.2;
 }
 
 /* Responsive */

@@ -1,6 +1,6 @@
 /* --- Contact Section --- */
 .contact {
-  background-color: var(--charcoal);
+  background-color: var(--bg-secondary);
 }
 
 .contact__grid {
@@ -17,7 +17,7 @@
 }
 
 .contact__heading {
-  color: var(--white-pure);
+  color: var(--text-primary);
   max-width: 14ch;
 }
 
@@ -50,7 +50,7 @@
   font-weight: 400;
   letter-spacing: var(--ls-wider);
   text-transform: uppercase;
-  color: var(--gray-mid);
+  color: var(--text-faint);
   display: block;
   margin-bottom: 0.35rem;
 }
@@ -58,7 +58,7 @@
 .contact__info-item a,
 .contact__info-item p {
   font-size: var(--fs-body-sm);
-  color: var(--white);
+  color: var(--text-secondary);
   font-weight: 300;
   line-height: var(--lh-relaxed);
 }
