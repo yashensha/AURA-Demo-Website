@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import { Phone, Mail, MapPin, ArrowUpRight } from 'lucide-react'
+import { Phone, MapPin, ArrowUpRight } from 'lucide-react'
 import './Contact.css'
 
 gsap.registerPlugin(ScrollTrigger)
@@ -34,14 +34,14 @@ export default function Contact() {
           <div className="contact__left">
             <span className="text-caption">Get in Touch</span>
             <h2 className="contact__heading text-h1">
-              Let's Create Something Extraordinary
+              Ready to Build with Green Luxury?
             </h2>
             <p className="text-body">
-              Every great space begins with a conversation. Tell us about your
-              vision, and we'll show you what's possible.
+              Every lasting space starts with the right material. Talk to our team
+              about ZOHAWUD, ZOHADECK, or a custom Zohaland solution for your project.
             </p>
-            <a href="mailto:hello@zohaland.com" className="btn-gold">
-              Book a Consultation
+            <a href="tel:+917902966777" className="btn-gold">
+              Call Our Studio
               <ArrowUpRight size={16} />
             </a>
           </div>
@@ -52,21 +52,21 @@ export default function Contact() {
                 <Phone size={18} strokeWidth={1} className="contact__info-icon" />
                 <div>
                   <span className="contact__info-label">Phone</span>
-                  <a href="tel:+914842345678">+91 484 234 5678</a>
+                  <a href="tel:+917902966777">+91 79029 66777</a>
                 </div>
               </div>
               <div className="contact__info-item">
-                <Mail size={18} strokeWidth={1} className="contact__info-icon" />
+                <Phone size={18} strokeWidth={1} className="contact__info-icon" />
                 <div>
-                  <span className="contact__info-label">Email</span>
-                  <a href="mailto:hello@zohaland.com">hello@zohaland.com</a>
+                  <span className="contact__info-label">Phone</span>
+                  <a href="tel:+919895569377">+91 98955 69377</a>
                 </div>
               </div>
               <div className="contact__info-item">
                 <MapPin size={18} strokeWidth={1} className="contact__info-icon" />
                 <div>
-                  <span className="contact__info-label">Studio</span>
-                  <p>Door No. 42/1, Bristow Road<br />Fort Kochi, Kerala 682001</p>
+                  <span className="contact__info-label">Office</span>
+                  <p>Room No. 41/847, Puthetath Building<br />NH Bypass, Padivattom, Ernakulam<br />Kochi, Kerala 682024</p>
                 </div>
               </div>
             </div>

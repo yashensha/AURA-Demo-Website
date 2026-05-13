@@ -55,7 +55,7 @@ export default function Hero() {
       })
     }
 
-    // Caption gold line
+    // Green line
     animate(lineRef.current, {
       width: ['0px', '60px'],
       delay: 300,
@@ -95,8 +95,8 @@ export default function Hero() {
 
   const handleExploreClick = (e) => {
     e.preventDefault()
-    const portfolio = document.querySelector('#portfolio')
-    if (portfolio) portfolio.scrollIntoView({ behavior: 'smooth' })
+    const services = document.querySelector('#services')
+    if (services) services.scrollIntoView({ behavior: 'smooth' })
   }
 
   return (
@@ -106,7 +106,7 @@ export default function Hero() {
           ref={imageRef}
           className="hero__image"
           src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1920&q=80&auto=format&fit=crop"
-          alt="Luxury living room interior with warm lighting and modern furniture"
+          alt="Luxury interior space featuring natural materials and elegant design"
           loading="eager"
         />
         <div className="hero__overlay"></div>
@@ -116,21 +116,21 @@ export default function Hero() {
         <div className="hero__caption-row">
           <span className="hero__line" ref={lineRef}></span>
           <span className="text-caption" ref={captionRef} style={{ opacity: 0 }}>
-            Luxury Interiors · Kochi
+            Green Luxury · Kochi, Kerala
           </span>
         </div>
 
         <h1 className="hero__heading text-display" ref={headingRef}>
-          Crafting Spaces That Speak
+          Materials That Outlast Trends
         </h1>
 
         <p className="hero__subline" ref={sublineRef} style={{ opacity: 0 }}>
-          Where architecture meets artistry
+          Diatom mud technology meets bespoke interior design — built for 50 years, designed for a lifetime.
         </p>
 
         <div ref={ctaRef} style={{ opacity: 0 }}>
-          <a href="#portfolio" className="btn-gold" onClick={handleExploreClick}>
-            Explore Our Work
+          <a href="#services" className="btn-gold" onClick={handleExploreClick}>
+            Discover Our Solutions
             <ArrowDown size={16} />
           </a>
         </div>

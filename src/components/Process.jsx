@@ -6,10 +6,10 @@ import './Process.css'
 gsap.registerPlugin(ScrollTrigger)
 
 const STEPS = [
-  { number: '01', title: 'Consultation', desc: 'We begin by listening — understanding your lifestyle, aspirations, and the soul of the space.' },
-  { number: '02', title: 'Concept', desc: 'Mood boards, spatial planning, and material palettes take shape as your vision crystallizes.' },
-  { number: '03', title: 'Design', desc: 'Detailed drawings, 3D visualizations, and specification documents bring every detail into focus.' },
-  { number: '04', title: 'Execution', desc: 'Our trusted craftsmen bring the design to life with meticulous attention to every joint and finish.' },
+  { number: '01', title: 'Consultation', desc: 'We understand your project — the space, the climate, the use. Whether residential or commercial, we match you with the right Zohaland material solution.' },
+  { number: '02', title: 'Specification', desc: 'Our team prepares a full material specification: product codes, quantities, technical data sheets, and installation guidelines tailored to your site.' },
+  { number: '03', title: 'Delivery', desc: 'Products sourced from our Perumbavoor factory and dispatched to your site. Tight lead times, rigorous QC — every board and plank inspected before it ships.' },
+  { number: '04', title: 'Installation', desc: 'Our partner craftsmen install to specification. Minimalist by design, every Zohaland product is engineered for clean, efficient on-site assembly.' },
 ]
 
 export default function Process() {
@@ -58,7 +58,7 @@ export default function Process() {
       <div className="container">
         <div className="process__header">
           <span className="text-caption process__label">How We Work</span>
-          <h2 className="process__heading text-h2">Our Process</h2>
+          <h2 className="process__heading text-h2">From Specification to Installation</h2>
         </div>
 
         <div className="process__timeline">

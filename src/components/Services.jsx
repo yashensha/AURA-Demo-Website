@@ -1,31 +1,35 @@
 import { useEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import { PenTool, Layers, Palette, MessageSquare } from 'lucide-react'
+import { Wind, Layers, Shield, MessageSquare } from 'lucide-react'
 import './Services.css'
 
 gsap.registerPlugin(ScrollTrigger)
 
 const SERVICES = [
   {
-    icon: PenTool,
-    title: 'Residential Design',
-    description: 'Complete interior design for luxury villas, apartments, and private residences across Kerala.',
+    icon: Wind,
+    label: 'ZOHAWUD',
+    title: 'Diatom Mud Boards',
+    description: 'The board that breathes. Actively absorbs formaldehyde and VOCs, regulates humidity, and outlasts traditional PVC by 50+ years — with 79% higher screw-holding strength.',
   },
   {
     icon: Layers,
-    title: 'Renovation',
-    description: 'Transforming existing spaces with a fresh design perspective while preserving architectural character.',
+    label: 'ZOHADECK',
+    title: 'WPC Composite Flooring',
+    description: 'ASA co-extruded surfaces built for 25 years of extremes. UV-stable, waterproof, and slip-resistant — from beachside villas to rooftop terraces.',
   },
   {
-    icon: Palette,
-    title: 'Styling & Staging',
-    description: 'Curated furniture, art, and accessories that bring a designed space to life with personality.',
+    icon: Shield,
+    label: 'ZOHAWALL',
+    title: 'Wall Cladding Systems',
+    description: 'Precision-engineered wall panels that marry material science with refined aesthetics. Durable, moisture-resistant, and designed to elevate every surface.',
   },
   {
     icon: MessageSquare,
-    title: 'Design Consultation',
-    description: 'Expert guidance on materials, layouts, and design direction for homeowners and architects.',
+    label: 'Design Studio',
+    title: 'Material Consultation',
+    description: 'Expert guidance on choosing the right Zohaland material for your project. From specification sheets to on-site walkthroughs — we architect the brief alongside you.',
   },
 ]
 
@@ -58,18 +62,19 @@ export default function Services() {
     <section className="services section" id="services" ref={sectionRef}>
       <div className="container">
         <div className="services__header">
-          <span className="text-caption services__label">What We Do</span>
+          <span className="text-caption services__label">Our Product Lines</span>
           <h2 className="services__heading text-h2">
-            Services Tailored to Distinction
+            Engineered for Green Luxury
           </h2>
         </div>
 
         <div className="services__grid">
-          {SERVICES.map(({ icon: Icon, title, description }, i) => (
+          {SERVICES.map(({ icon: Icon, label, title, description }, i) => (
             <article className="services__card" key={i}>
               <div className="services__card-icon">
                 <Icon size={28} strokeWidth={1} />
               </div>
+              <span className="services__card-label">{label}</span>
               <h3 className="services__card-title">{title}</h3>
               <p className="services__card-desc text-body">{description}</p>
               <div className="services__card-line"></div>

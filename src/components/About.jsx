@@ -82,42 +82,42 @@ export default function About() {
           <div className="about__content">
             <span className="text-caption about__label">Our Philosophy</span>
             <h2 className="about__heading text-h2">
-              Design Is a Dialogue Between Space and Soul
+              Where Material Science Meets Living Design
             </h2>
             <div className="about__text text-body">
               <p>
-                At Zohaland, we believe that exceptional interiors are born from understanding —
-                understanding how light falls through a Kerala monsoon window, how a family
-                gathers in the evening, how silence can be shaped by architecture.
+                At Zohaland, we believe the finest interiors begin with the finest materials.
+                Our Diatom Mud technology doesn't just look beautiful — it actively purifies
+                your air, regulates humidity, and resists mold without a single chemical treatment.
               </p>
               <p>
-                Our approach is deliberate. Every material is chosen with intention, every
-                proportion calibrated to evoke calm and wonder. We don't follow trends —
-                we craft environments that outlast them.
+                We don't follow design trends. We engineer material solutions that outlast them.
+                Every product in our lineup — from ZOHAWUD to ZOHADECK — is built to a
+                minimum 25-year performance standard, backed by independent testing.
               </p>
             </div>
 
             <div className="about__stats" ref={statsRef}>
               <div className="about__stat">
                 <div className="about__stat-row">
-                  <span className="about__stat-number" data-target="15">0</span>
-                  <span className="about__stat-suffix">+</span>
+                  <span className="about__stat-number" data-target="50">0</span>
+                  <span className="about__stat-suffix">yr</span>
                 </div>
-                <span className="about__stat-label">Years</span>
+                <span className="about__stat-label">Material Lifespan</span>
               </div>
               <div className="about__stat">
                 <div className="about__stat-row">
-                  <span className="about__stat-number" data-target="200">0</span>
-                  <span className="about__stat-suffix">+</span>
+                  <span className="about__stat-number" data-target="79">0</span>
+                  <span className="about__stat-suffix">%</span>
                 </div>
-                <span className="about__stat-label">Homes</span>
+                <span className="about__stat-label">Stronger Than PVC</span>
               </div>
               <div className="about__stat">
                 <div className="about__stat-row">
-                  <span className="about__stat-number" data-target="35">0</span>
+                  <span className="about__stat-number" data-target="3">0</span>
                   <span className="about__stat-suffix">+</span>
                 </div>
-                <span className="about__stat-label">Awards</span>
+                <span className="about__stat-label">Product Lines</span>
               </div>
             </div>
           </div>

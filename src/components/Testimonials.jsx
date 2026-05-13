@@ -8,19 +8,19 @@ gsap.registerPlugin(ScrollTrigger)
 
 const TESTIMONIALS = [
   {
-    quote: 'Zohaland transformed our home into something we never imagined possible. Every room tells a story, every corner has intention.',
+    quote: 'We chose ZOHAWUD for our entire ground floor. Two years in, no warping, no dampness — and the air quality is noticeably better. Worth every rupee.',
     name: 'Priya & Arjun Menon',
-    location: 'Edappally, Kochi',
+    location: 'Villa Owner, Edappally, Kochi',
   },
   {
-    quote: 'Working with Zohaland was effortless. They understood our vision before we could fully articulate it — and then exceeded it.',
-    name: 'Dr. Suresh Nair',
-    location: 'Kakkanad, Kochi',
+    quote: 'The ZOHADECK flooring on our hotel terrace has survived three monsoons without a single crack or fade. Our guests always ask what it is.',
+    name: 'Suresh Nair',
+    location: 'Hotel Developer, Kakkanad',
   },
   {
-    quote: 'The attention to detail is extraordinary. Two years later, our home still feels like it was completed yesterday.',
+    quote: 'Zohaland’s team walked us through the full specification. The material data backed every claim. That kind of transparency is rare.',
     name: 'Meera & Thomas Kurian',
-    location: 'Fort Kochi',
+    location: 'Homeowner, Fort Kochi',
   },
 ]
 

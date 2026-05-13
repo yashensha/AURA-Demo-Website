@@ -76,6 +76,16 @@
   letter-spacing: var(--ls-snug);
 }
 
+.services__card-label {
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: var(--ls-widest);
+  text-transform: uppercase;
+  color: var(--green);
+  display: inline-block;
+  margin-top: -0.25rem;
+}
+
 .services__card-desc {
   color: var(--text-muted);
   max-width: 280px;
@@ -92,7 +102,7 @@
 
 .services__card:hover .services__card-line {
   width: 60px;
-  background-color: var(--gold);
+  background-color: var(--green);
 }
 
 /* Responsive */

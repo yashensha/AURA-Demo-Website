@@ -8,7 +8,7 @@ export default function Footer() {
           <a href="#" className="footer__logo" aria-label="Zohaland Interiors Home">
             <span className="footer__logo-accent">Z</span>ohaland
           </a>
-          <p className="footer__tagline">Luxury Interiors · Kochi, Kerala</p>
+          <p className="footer__tagline">Green Luxury · Kochi, Kerala</p>
         </div>
 
         <div className="footer__socials">
@@ -40,7 +40,7 @@ export default function Footer() {
         </div>
 
         <p className="footer__copy">
-          &copy; {new Date().getFullYear()} Zohaland Interiors. All rights reserved.
+          &copy; {new Date().getFullYear()} Zohaland. All rights reserved.
         </p>
       </div>
     </footer>
