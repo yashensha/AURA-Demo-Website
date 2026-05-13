@@ -5,8 +5,8 @@ export default function Footer() {
     <footer className="footer" id="footer">
       <div className="footer__inner container">
         <div className="footer__brand">
-          <a href="#" className="footer__logo" aria-label="ÀURA Interiors Home">
-            <span className="footer__logo-accent">À</span>URA
+          <a href="#" className="footer__logo" aria-label="Zohaland Interiors Home">
+            <span className="footer__logo-accent">Z</span>ohaland
           </a>
           <p className="footer__tagline">Luxury Interiors · Kochi, Kerala</p>
         </div>
@@ -40,7 +40,7 @@ export default function Footer() {
         </div>
 
         <p className="footer__copy">
-          &copy; {new Date().getFullYear()} ÀURA Interiors. All rights reserved.
+          &copy; {new Date().getFullYear()} Zohaland Interiors. All rights reserved.
         </p>
       </div>
     </footer>

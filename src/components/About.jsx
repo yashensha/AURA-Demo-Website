@@ -86,7 +86,7 @@ export default function About() {
             </h2>
             <div className="about__text text-body">
               <p>
-                At ÀURA, we believe that exceptional interiors are born from understanding —
+                At Zohaland, we believe that exceptional interiors are born from understanding —
                 understanding how light falls through a Kerala monsoon window, how a family
                 gathers in the evening, how silence can be shaped by architecture.
               </p>

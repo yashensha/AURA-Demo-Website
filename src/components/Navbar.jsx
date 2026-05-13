@@ -41,8 +41,8 @@ export default function Navbar() {
     <>
       <nav className={`navbar ${scrolled ? 'navbar--scrolled' : ''}`} id="main-nav">
         <div className="navbar__inner">
-          <a href="#" className="navbar__logo" aria-label="ÀURA Interiors Home">
-            <span className="navbar__logo-accent">À</span>URA
+          <a href="#" className="navbar__logo" aria-label="Zohaland Interiors Home">
+            <span className="navbar__logo-accent">Z</span>ohaland
           </a>
 
           <ul className="navbar__links" role="navigation" aria-label="Main navigation">
@@ -77,7 +77,7 @@ export default function Navbar() {
         </ul>
         <div className="mobile-menu__footer">
           <p>Kochi, Kerala</p>
-          <a href="mailto:hello@aurainteriors.in">hello@aurainteriors.in</a>
+          <a href="mailto:hello@zohaland.com">hello@zohaland.com</a>
         </div>
       </div>
     </>

@@ -40,7 +40,7 @@ export default function Contact() {
               Every great space begins with a conversation. Tell us about your
               vision, and we'll show you what's possible.
             </p>
-            <a href="mailto:hello@aurainteriors.in" className="btn-gold">
+            <a href="mailto:hello@zohaland.com" className="btn-gold">
               Book a Consultation
               <ArrowUpRight size={16} />
             </a>
@@ -59,7 +59,7 @@ export default function Contact() {
                 <Mail size={18} strokeWidth={1} className="contact__info-icon" />
                 <div>
                   <span className="contact__info-label">Email</span>
-                  <a href="mailto:hello@aurainteriors.in">hello@aurainteriors.in</a>
+                  <a href="mailto:hello@zohaland.com">hello@zohaland.com</a>
                 </div>
               </div>
               <div className="contact__info-item">

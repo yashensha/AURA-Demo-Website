@@ -8,12 +8,12 @@ gsap.registerPlugin(ScrollTrigger)
 
 const TESTIMONIALS = [
   {
-    quote: 'ÀURA transformed our home into something we never imagined possible. Every room tells a story, every corner has intention.',
+    quote: 'Zohaland transformed our home into something we never imagined possible. Every room tells a story, every corner has intention.',
     name: 'Priya & Arjun Menon',
     location: 'Edappally, Kochi',
   },
   {
-    quote: 'Working with ÀURA was effortless. They understood our vision before we could fully articulate it — and then exceeded it.',
+    quote: 'Working with Zohaland was effortless. They understood our vision before we could fully articulate it — and then exceeded it.',
     name: 'Dr. Suresh Nair',
     location: 'Kakkanad, Kochi',
   },
