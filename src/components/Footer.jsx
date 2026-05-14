@@ -1,3 +1,4 @@
+import Logo from './Logo'
 import './Footer.css'
 
 export default function Footer() {
@@ -6,9 +7,9 @@ export default function Footer() {
       <div className="footer__inner container">
         <div className="footer__brand">
           <a href="#" className="footer__logo" aria-label="Zohaland Interiors Home">
-            <span className="footer__logo-accent">Z</span>ohaland
+            <Logo className="footer__logo-svg" />
           </a>
-          <p className="footer__tagline">Green Luxury · Kochi, Kerala</p>
+          <p className="footer__tagline">Customised Interior Solutions</p>
         </div>
 
         <div className="footer__socials">

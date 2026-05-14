@@ -116,7 +116,7 @@ export default function Hero() {
         <div className="hero__caption-row">
           <span className="hero__line" ref={lineRef}></span>
           <span className="text-caption" ref={captionRef} style={{ opacity: 0 }}>
-            Green Luxury · Kochi, Kerala
+            Customised Interior Solutions
           </span>
         </div>
 

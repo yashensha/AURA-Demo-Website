@@ -11,6 +11,7 @@
 
 .portfolio__heading {
   color: var(--text-primary);
+  padding-bottom: 24px;
 }
 
 .portfolio__track {
@@ -86,14 +87,14 @@
   right: 2rem;
   font-size: clamp(3rem, 5vw, 5rem);
   font-weight: 100;
-  color: rgba(255,255,255,0.08);
+  color: rgba(255, 255, 255, 0.08);
   z-index: var(--z-above);
   line-height: 1;
   transition: color var(--duration-normal) var(--ease-out);
 }
 
 .portfolio__card:hover .portfolio__card-index {
-  color: rgba(201,169,110,0.2);
+  color: rgba(255, 255, 255, 0.377);
 }
 
 @media (max-width: 768px) {

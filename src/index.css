@@ -1,6 +1,6 @@
 /* ============================================
    Zohaland — Global Design System
-   Green Luxury · Sustainable Technology
+   Customised Interior Solutions
    ============================================ */
 
 /* Geist Sans — Variable Font */
@@ -230,7 +230,7 @@ img, video {
   letter-spacing: var(--ls-wider);
   line-height: var(--lh-normal);
   text-transform: uppercase;
-  color: var(--gold-dark);
+  color: var(--green-light);
 }
 
 .text-body {

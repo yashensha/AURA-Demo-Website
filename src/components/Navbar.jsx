@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import Logo from './Logo'
 import './Navbar.css'
 
 const NAV_LINKS = [
@@ -42,7 +43,7 @@ export default function Navbar() {
       <nav className={`navbar ${scrolled ? 'navbar--scrolled' : ''}`} id="main-nav">
         <div className="navbar__inner">
           <a href="#" className="navbar__logo" aria-label="Zohaland Interiors Home">
-            <span className="navbar__logo-accent">Z</span>ohaland
+            <Logo className="navbar__logo-svg" />
           </a>
 
           <ul className="navbar__links" role="navigation" aria-label="Main navigation">
