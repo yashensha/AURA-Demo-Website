@@ -1,13 +1,13 @@
 /* --- Services Section --- */
 .services {
-  background-color: var(--bg-secondary);
+  background-color: #E0E8DA;
 }
 
 .services__header {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  margin-bottom: var(--space-lg);
+  margin-bottom: var(--space-md);
 }
 
 .services__heading {
@@ -24,7 +24,7 @@
 
 /* Card */
 .services__card {
-  background-color: var(--bg-card);
+  background-color: var(--white-pure);
   padding: clamp(2rem, 3vw, 3rem);
   display: flex;
   flex-direction: column;
@@ -32,7 +32,10 @@
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  transition: background-color var(--duration-normal) var(--ease-out);
+  min-height: 320px;
+  box-shadow: 0 1px 3px rgba(26, 18, 8, 0.06);
+  transition: background-color var(--duration-normal) var(--ease-out),
+              box-shadow var(--duration-normal) var(--ease-out);
 }
 
 .services__card::before {
@@ -41,13 +44,14 @@
   top: 0;
   left: 0;
   width: 0;
-  height: 2px;
-  background-color: var(--gold);
+  height: 3px;
+  background: linear-gradient(to right, var(--green-dark), var(--green-light));
   transition: width var(--duration-slow) var(--ease-out);
 }
 
 .services__card:hover {
   background-color: var(--bg-primary);
+  box-shadow: 0 4px 24px rgba(43, 122, 52, 0.12);
 }
 
 .services__card:hover::before {
@@ -55,18 +59,21 @@
 }
 
 .services__card-icon {
-  color: var(--gold);
-  width: 48px;
-  height: 48px;
+  color: var(--green);
+  width: 52px;
+  height: 52px;
   display: flex;
   align-items: center;
   justify-content: center;
   border: 1px solid var(--border);
-  transition: border-color var(--duration-normal) var(--ease-out);
+  background-color: var(--green-muted);
+  transition: border-color var(--duration-normal) var(--ease-out),
+              background-color var(--duration-normal) var(--ease-out);
 }
 
 .services__card:hover .services__card-icon {
-  border-color: var(--gold);
+  border-color: var(--green);
+  background-color: rgba(71, 149, 63, 0.2);
 }
 
 .services__card-title {

@@ -28,7 +28,7 @@
   top: 0;
   bottom: 0;
   width: 1px;
-  background-color: var(--gold);
+  background-color: var(--green);
   transform: translateX(-50%);
 }
 
@@ -61,7 +61,7 @@
   width: 11px;
   height: 11px;
   border-radius: 50%;
-  border: 1px solid var(--gold);
+  border: 1px solid var(--green);
   background-color: var(--bg-secondary);
   z-index: var(--z-above);
 }
@@ -77,11 +77,12 @@
 .process__step-number {
   font-size: clamp(3rem, 5vw, 4.5rem);
   font-weight: 100;
-  color: var(--gold);
-  opacity: 0.15;
+  color: var(--green);
+  opacity: 0.18;
   line-height: 1;
   position: absolute;
   top: -0.75rem;
+  font-variant-numeric: tabular-nums;
 }
 
 .process__step--left .process__step-number {

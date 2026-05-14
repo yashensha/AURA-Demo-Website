@@ -59,9 +59,9 @@ export default function Navbar() {
             aria-label={menuOpen ? 'Close menu' : 'Open menu'}
             aria-expanded={menuOpen}
           >
-            <span></span>
-            <span></span>
-            <span></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
           </button>
         </div>
       </nav>
@@ -77,7 +77,7 @@ export default function Navbar() {
         </ul>
         <div className="mobile-menu__footer">
           <p>Kochi, Kerala</p>
-          <a href="mailto:hello@zohaland.com">hello@zohaland.com</a>
+          <a href="tel:+917902966777" translate="no">+91 79029 66777</a>
         </div>
       </div>
     </>

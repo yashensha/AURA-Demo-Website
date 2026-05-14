@@ -125,8 +125,10 @@ export default function About() {
           <div className="about__image-wrap">
             <img
               src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=80&auto=format&fit=crop"
-              alt="Elegant interior design with natural materials and warm lighting"
+              alt="Elegant interior with Zohaland diatom mud wall panels and natural lighting"
               loading="lazy"
+              width="800"
+              height="1000"
             />
           </div>
         </div>

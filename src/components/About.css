@@ -52,15 +52,16 @@
 .about__stat-number {
   font-size: clamp(2.5rem, 5vw, 3.5rem);
   font-weight: 200;
-  color: var(--gold);
+  color: var(--green);
   letter-spacing: -0.02em;
   line-height: 1;
+  font-variant-numeric: tabular-nums;
 }
 
 .about__stat-suffix {
   font-size: clamp(1.5rem, 3vw, 2rem);
   font-weight: 200;
-  color: var(--gold);
+  color: var(--green);
   line-height: 1;
 }
 
@@ -93,9 +94,9 @@
   left: -1px;
   right: -1px;
   bottom: -1px;
-  border: 1px solid var(--gold);
+  border: 1px solid var(--green);
   pointer-events: none;
-  opacity: 0.2;
+  opacity: 0.25;
 }
 
 /* Responsive */

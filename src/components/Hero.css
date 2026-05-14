@@ -58,6 +58,9 @@
 .hero__heading {
   color: var(--white-pure);
   max-width: 12ch;
+  word-break: keep-all;
+  hyphens: none;
+  text-shadow: 0 2px 20px rgba(0,0,0,0.2);
 }
 
 .hero__char {
@@ -68,9 +71,11 @@
 .hero__subline {
   font-size: var(--fs-body);
   font-weight: 300;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.8);
   letter-spacing: var(--ls-wide);
-  max-width: 400px;
+  max-width: 480px;
+  line-height: var(--lh-relaxed);
+  text-shadow: 0 1px 8px rgba(0,0,0,0.3);
 }
 
 /* Scroll Indicator */
@@ -113,6 +118,14 @@
   }
 
   .hero__heading {
+    max-width: 100%;
+    font-size: clamp(2.5rem, 10vw, 4rem);
+    hyphens: none;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+  }
+
+  .hero__subline {
     max-width: 100%;
   }
 
