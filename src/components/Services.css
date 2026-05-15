@@ -80,7 +80,7 @@
   font-size: var(--fs-h3);
   font-weight: 300;
   color: var(--text-primary);
-  letter-spacing: var(--ls-snug);
+  letter-spacing: 120%;
 }
 
 .services__card-label {

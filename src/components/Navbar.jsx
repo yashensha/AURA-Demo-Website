@@ -40,10 +40,11 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className={`navbar ${scrolled ? 'navbar--scrolled' : ''}`} id="main-nav">
+      <nav className={`navbar ${scrolled ? 'navbar--scrolled' : ''} ${menuOpen ? 'navbar--open' : ''}`} id="main-nav">
         <div className="navbar__inner">
           <a href="#" className="navbar__logo" aria-label="Zohaland Interiors Home">
             <Logo className="navbar__logo-svg" />
+            <span className="navbar__logo-text">Zohaland</span>
           </a>
 
           <ul className="navbar__links" role="navigation" aria-label="Main navigation">
